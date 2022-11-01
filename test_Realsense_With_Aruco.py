@@ -25,7 +25,7 @@ align_to = rs.stream.color  # align_to  Is the stream type for which the depth f
 align = rs.align(align_to)  # rs.align  Align the depth frame with other frames
 #funtion for easily concate video or image
 
-
+#chomehhhh
 
 def get_aligned_images():
     frames = pipeline.wait_for_frames()  # Wait for image frame , Get the frameset of color and depth
