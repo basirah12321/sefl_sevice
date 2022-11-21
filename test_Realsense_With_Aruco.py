@@ -47,6 +47,7 @@ def get_aligned_images():
 '''  Obtain the 3D coordinates of random points  '''
 	
 
+
 point = (400, 300)
 def show_distance(event, x, y, args, params):
     global point
@@ -142,8 +143,11 @@ while (showLive):
 		frame = cv2.putText(color_image, data_string, (x-30, y), cv2.FONT_HERSHEY_SIMPLEX,0.5, (0, 0, 255), 2, cv2.LINE_AA)
   
   
-		print('depth: ', dis*100)
-		print('camera_coordinate: ', camera_coordinate)
+		#print('depth: ', dis*100)
+		#print('camera_coordinate: ', camera_coordinate)
+		print(str(ids[i]))
+		
+		
   
 		cv2.circle(img_color, point, 4, (0, 0, 255))
 		cv2.imshow('Realsense', img_color)
@@ -161,5 +165,5 @@ while (showLive):
 		break
 
 
-pipeline.stop()
+#pipeline.stop()
 cv2.destroyAllWindows()
